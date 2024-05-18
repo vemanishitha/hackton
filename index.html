@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form >
+        <h1>Expense Tracker</h1>
+        <label for="">Name:</label>
+        <input type="text" id="nameInput"><br>
+        <label for="">Amonut:</label>
+        <input type="number" name="" id="amountInput"><br>
+        <label for="">Category:</label>
+        <input type="text" id="categoryInput"><br>
+        <label for="">Date:</label>
+        <input type="date"  id="dateInput"><br>
+    </form>
+
+        
+        <button id="addButton" onclick="ExpApp.addNewTask(ExpApp.nameInputHTML.value)">Add New Task</button>
+        <ul id="ExpItems" >
+            
+        </ul>
+        <p id="result"></p>
+    </div>
+
+    <script src="exp.js"></script>
+</body>
+</html>
